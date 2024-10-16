@@ -1,0 +1,103 @@
+/* Import custom font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* General Body Styling for the History Page */
+body.history-page {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    135deg,
+    #1f1c2c,
+    #928dab
+  ); /* Background gradient */
+  margin: 0;
+  height: 100vh; /* Full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Center container */
+.history-container {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Light transparency for glass effect */
+  backdrop-filter: blur(
+    10px
+  ); /* Blurring the background for the glassmorphism effect */
+  border-radius: 20px;
+  padding: 40px;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Border for the glass effect */
+  text-align: center;
+}
+
+/* Title styles */
+h1.history-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+/* Description text */
+p.description {
+  color: #bdbdbd;
+  font-size: 16px;
+  margin-bottom: 40px;
+  line-height: 1.5; /* Adjusted line height for readability */
+}
+
+/* Styling for each history item */
+.history-item {
+  background: rgba(255, 255, 255, 0.1); /* More transparent for glass effect */
+  backdrop-filter: blur(10px); /* Glassmorphism */
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Depth effect */
+}
+
+/* Favicon image in history item */
+.history-item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 8px; /* Slightly rounded image */
+}
+
+/* Text inside history items */
+.history-text h2 {
+  color: #fff;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.history-text p {
+  color: #bdbdbd;
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+/* Hover effect for history items */
+.history-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease;
+}
+/* Favicon image in history item */
+.history-item img.favicon {
+  width: 32px; /* Adjust size as needed */
+  height: 32px;
+  margin-right: 15px;
+  border-radius: 5px; /* Slightly rounded corners for a nicer appearance */
+}

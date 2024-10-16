@@ -1,38 +1,268 @@
+/* Import custom font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* General body styling for the main app */
+body {
+  background: linear-gradient(135deg, #1f1c2c 0%, #928dab 100%);
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
 .App {
+  width: 260px;
+  padding: 20px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.current-site {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.current-site h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #50c9c3;
+}
+
+.current-site p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Button styles */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #6a82fb 0%, #fc5c7d 100%);
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  margin-bottom: 10px; /* Add space between buttons */
+}
+
+button:hover {
+  background: linear-gradient(135deg, #fc5c7d 0%, #6a82fb 100%);
+}
+
+/* Input styles */
+input {
+  width: 100%;
+  padding: 12px; /* Increased padding for better visibility */
+  margin: 5px 0;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* Placeholder styling */
+input::placeholder {
+  color: #ddd; /* Make placeholder text more visible */
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+p {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Authentication form styles */
+.auth-form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.auth-form h2 {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.auth-form input {
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.auth-form button:hover {
+  background: linear-gradient(135deg, #38ef7d 0%, #11998e 100%);
+}
+
+.auth-form p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.auth-form p button {
+  background: none;
+  border: none;
+  color: #50c9c3;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0;
+}
+
+.auth-form p button:hover {
+  text-decoration: underline;
+}
+
+/* History page styling */
+body.history-page {
+  font-family: "Poppins", sans-serif;
+  background-color: #2a2a5e; /* Dark purple background */
+  margin: 0;
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Root container for history page */
+#root {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* History page title */
+h1.history-title {
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Description text for history page */
+p.description {
+  text-align: center;
+  color: #bdbdbd;
+  font-size: 16px;
+  margin-bottom: 40px;
+  line-height: 1.5; /* Adjusted line height for readability */
+}
+
+/* History items styling */
+.history-item {
+  background-color: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+}
+
+/* Favicon/image inside the history items */
+.history-item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 5px; /* Slightly rounded image corners */
+}
+
+/* Website name in history items */
+.history-item h2 {
+  color: #fff;
+  font-size: 18px;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Time spent text in history items */
+.history-item p {
+  color: #bdbdbd;
+  margin: 5px 0 0 0;
+  font-size: 14px;
+}
+
+/* Hover effect for history items */
+.history-item:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly lighter on hover */
+  transition: background-color 0.3s ease;
+}
+
+/* History page container */
+.history-container {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Light transparency for glass effect */
+  backdrop-filter: blur(
+    10px
+  ); /* Blurring the background for the glassmorphism effect */
+  border-radius: 20px;
+  padding: 40px;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Border for the glass effect */
+  text-align: center;
+}
+
+/* Text inside history items */
+.history-text h2 {
+  color: #fff;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.history-text p {
+  color: #bdbdbd;
+  margin: 5px 0 0;
+  font-size: 14px;
 }
