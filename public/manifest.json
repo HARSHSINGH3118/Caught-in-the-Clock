@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Caught in the Clock",
+  "name": " Time Spy",
   "version": "1.0",
   "description": "Tracks time spent on websites and stores browsing history.",
   "permissions": ["tabs", "storage", "activeTab"],
